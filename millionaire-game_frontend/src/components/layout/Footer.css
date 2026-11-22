@@ -1,0 +1,15 @@
+.footer {
+  padding: 26px 3%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  border-top: 1px solid var(--line);
+  background: #020d20c9;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.footer b {
+  color: white;
+}

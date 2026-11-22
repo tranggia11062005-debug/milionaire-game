@@ -1,0 +1,25 @@
+.header {
+  min-height: 90px;
+  padding: 14px 3%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--line);
+  background: #031127e8;
+  gap: 24px;
+}
+
+.header nav {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  font-size: 13px;
+}
+
+.header nav > a:not(.btn) {
+  color: #c9d8ee;
+}
+
+.header nav > a.active {
+  color: var(--gold);
+}
