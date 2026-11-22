@@ -1,16 +1,13 @@
-# React + Vite
+# Ai là triệu phú — Các trang công khai
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Chạy độc lập, không cần backend. Yêu cầu Node.js 22.12+ hoặc 24 LTS, có npm.
 
-Currently, two official plugins are available:
+Trong thư mục này chạy npm ci rồi npm run dev.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Đường dẫn: / (trang chủ), /guide (hướng dẫn), /news (bài viết), /news/:slug (chi tiết). Đường dẫn không tồn tại có trang 404.
 
-## React Compiler
+Header, footer, logo và nội dung trang được tách thành các component. Dữ liệu biên soạn sẵn nằm ở src/data. Đăng nhập, đăng ký, bảng xếp hạng và chế độ chơi chưa bật.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Kiểm tra bằng npm run lint, npm run build, npm run test:public. Kiểm thử public kiểm tra render đường dẫn và logic dữ liệu, không thay thế kiểm tra thao tác trình duyệt.
 
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+Khi triển khai hosting cần cấu hình fallback về index.html cho BrowserRouter. Xem ../GIAI-DOAN-02.md để biết danh sách phần việc và cách tích hợp tiếp.

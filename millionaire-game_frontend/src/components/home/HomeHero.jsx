@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 export default function HomeHero() {
   return (
     <section className="hero">
@@ -22,11 +23,14 @@ export default function HomeHero() {
           >
             CHƠI NGAY
           </button>
-          <a className="btn outline" href="#features">
-            Khám phá trò chơi
-          </a>
+          <Link className="btn outline" to="/guide">
+            Tìm hiểu luật chơi
+          </Link>
         </div>
         <small>15 câu hỏi • 4 quyền trợ giúp • 3 mốc quan trọng</small>
+        <p className="coming-soon">
+          Chế độ chơi sắp ra mắt. Khám phá luật chơi để sẵn sàng nhé!
+        </p>
       </div>
       <div className="panel hero-award">
         <div className="hero-seal">

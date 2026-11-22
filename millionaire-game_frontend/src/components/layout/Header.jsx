@@ -9,7 +9,8 @@ export default function Header() {
         <NavLink to="/" end>
           Trang chủ
         </NavLink>
-        <a href="/#features">Khám phá</a>
+        <NavLink to="/guide">Hướng dẫn</NavLink>
+        <NavLink to="/news">Tin tức</NavLink>
         <button
           className="nav-pending"
           type="button"
