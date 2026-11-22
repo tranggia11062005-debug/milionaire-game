@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "oxlint",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test:public": "vite build --ssr tests/public-pages.smoke.jsx --outDir node_modules/.cache/public-pages-test && node node_modules/.cache/public-pages-test/public-pages.smoke.js"
   },
   "dependencies": {
     "axios": "^1.19.0",
