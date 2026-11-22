@@ -301,3 +301,85 @@ html {
     scroll-behavior: auto;
   }
 }
+.auth-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 100px;
+  align-items: center;
+  max-width: 1150px;
+  margin: 20px auto;
+}
+.auth-intro h1 {
+  font-size: 40px;
+  margin-top: 22px;
+}
+.auth-intro .hero-seal {
+  height: 210px;
+  width: 210px;
+  font-size: 27px;
+  margin: 30px 0 0;
+}
+.auth-form {
+  padding: 36px 40px;
+}
+.auth-form h2 {
+  font-size: 27px;
+}
+.auth-form > p {
+  font-size: 13px;
+}
+.form,
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+button,
+a,
+input,
+select,
+textarea {
+  outline-offset: 4px;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  font-size: 13px;
+  color: #dfe8f6;
+}
+.field input,
+input:not([type="radio"]):not([type="checkbox"]),
+select,
+textarea {
+  background: #021126;
+  color: #eaf2ff;
+  border: 1px solid #3c5673;
+  padding: 12px 13px;
+  border-radius: 5px;
+  width: 100%;
+  min-height: 44px;
+}
+input::placeholder,
+textarea::placeholder {
+  color: #768aa7;
+}
+textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+.check {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+}
+.check input {
+  accent-color: #0756cb;
+}
